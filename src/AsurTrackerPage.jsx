@@ -21,7 +21,7 @@ const AsurTrackerPage = () => {
     setError('');
 
     try {
-      const response = await fetch(`http://127.0.0.1:8000/get_data/${username}`);
+      const response = await fetch(`https://sih-server-0705.onrender.com/get_data/${username}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
